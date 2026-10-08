@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <title>온라인 프로필</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            background-color: whitesmoke;
+        }
+        #container {
+            width: 690px;
+            height: 690px;
+            margin: 95px auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px #ccc;
+            overflow: hidden;
+        }
+        /* 왼쪽 소개 */
+        aside {
+            width: 215px;
+            height: 690px;
+            background-color: #4a6cf7;
+            color: white;
+            text-align: center;
+            float: left;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+        #nameCard img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+        }
+        #nameCard h1 {
+            font-size: 30px;
+            margin: 20px 0 5px 0;
+        }
+        #nameCard p {
+            font-size: 13px;
+        }
+        #detail {
+            margin-top: 30px;
+            text-align: left;
+            margin-left: 25px;
+            font-size: 13px;
+        }
+        #detail p {
+            margin: 12px 0;
+        }
+        #sns {
+            margin-top: 35px;
+        }
+        #sns h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        #sns h3 {
+            margin: 0;
+        }
+        #sns a {
+            background-color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+        /* 오른쪽 메인 소개*/
+        #main {
+            width: 475px;
+            height: 690px;
+            float: left;
+            padding: 40px 25px;
+            box-sizing: border-box;
+        }
+        section {
+            margin-bottom: 18px;
+        }
+        .subtitle {
+            border-left: 5px solid #4b6ff2;
+            padding-left: 10px;
+            margin: 0 0 8px 0;
+        }
+        section p {
+            line-height: 18px;
+        }
+        ul {
+            line-height: 20px;
+        }
+        /* 테이블 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 12px;
+        }
+        th {
+            background-color: #4b6ff2;
+            color: white;
+            padding: 5px;
+            border: 1px solid white;
+        }
+        td {
+            padding: 5px;
+            border: 1px solid #ddd;
+        }
+</style>
+</head>
+<body>
+    <div id="container">
+        <!-- 사이드바 -->
+        <aside>
+            <div id="nameCard">
+                <img src="RYAN_1.jpg" alt="프로필 이미지">
+                <h1>손명찬</h1>
+                <p>프로그래밍 재밌어요?</p>
+            </div>
+            <div id="detail">
+                <p>🏠 Incheon, Korea</p>
+                <p>✉️ test@naver.com</p>
+            </div>
+            <div id="sns">
+                <h2>SNS</h2>
+                <h3>
+                    <a href="https://github.com/mcson3">클릭!</a>
+                </h3>
+            </div>
+        </aside>
+        <!-- 오른쪽 메인 소개 -->
+        <div id="main">
+            <section>
+                <h2 class="subtitle">자기소개</h2>
+                <p>
+                    <mark>프로그래밍</mark>에 관심이 많고 싶습니다.<br>
+                    현재 열심히 공부하며? 코딩 중!
+                </p>
+            </section>
+            <!-- 경력 -->
+            <section>
+                <h2 class="subtitle">Experience</h2>
+                <ul>
+                    <li>
+                        하버드
+                        <ul>
+                            <li>응용 프로그램 개발(C#)</li>
+                            <li>탈모 치료제 개발</li>
+                            <li>반응형 앱</li>
+                        </ul>
+                    </li>
+                    <li>
+                        컴퓨터 학원
+                        <ul>
+                            <li>Spring 기반 프로젝트 - 쇼핑몰</li>
+                            <li>정부기관 해킹 서비스</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- 숙련도 -->
+            <section>
+                <h2 class="subtitle">보유 기술</h2>
+                <ul>
+                    <li>Javavara</li>
+                    <li>Olbemi</li>
+                    <li>HAMA / CS</li>
+                </ul>
+            </section>
+            <!-- 학력 -->
+            <section>
+                <h2 class="subtitle">Education</h2>
+                <table>
+                    <caption>학력 사항</caption>
+                    <thead>
+                        <tr>
+                            <th>출신학교</th>
+                            <th>전공</th>
+                            <th>기간</th>
+                            <th>구분</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>하버드</td>
+                            <td>안녕하십니과</td>
+                            <td>2010.3 ~ 2010.4</td>
+                            <td>미친수석</td>
+                        </tr>
+                        <tr>
+                            <td>고등어학교</td>
+                            <td>-</td>
+                            <td>2007.3 ~ 2009.2</td>
+                            <td>졸업</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
